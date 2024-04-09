@@ -166,6 +166,14 @@ Após executar os comandos acima adicionaremos o Pomelo, com:
 dotnet add package Pomelo.EntityFrameworkCore.MySql
 ~~~
 
+Como vamos usar ORM, precisaremos de classes em nosso programa equivalentes às tabelas no banco de dados. Podemos criá-las automaticamente, com ferramentas. Esse processo de criar código usando ferramentas é chamado scaffolding.
+
+Primeiro, vamos instalar a ferramenta Entity Framework Core .NET Command-line Tools, que nos traz diversas facilidades para trabalhar com EF. Você so fará isso uma vez em seu computador, não precisando repetir todas as vezes.
+
+~~~pwsh
+dotnet tool install --global dotnet-ef
+~~~
+
 ### Outros pacotes
 Podemos adicionar o pacote do `swagger`, que irá nos entregar uma interface gráfica para interagirmos e testarmos nossa aplicação.
 Para adicionarmos o `swagger` utilizamos o seguinte comando:
